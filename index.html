@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<title>EFECAN DEMİR</title>
+<meta name="keywords" content="EFECAN DEMİR">
+<meta name="description" content="EFECAN DEMİR">
+<meta name="author" content="EFECAN DEMİR">
+<link rel="icon" href="edlogo.png" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="style.css">
+<!-- slider ekranı için kütüphane çağırıldı-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <!-- <img src="https://media.giphy.com/media/KBJTi1lxDGrfPsl8Hf/giphy.gif" height="80" width="100" onclick="topFunction()" id="myBtn"></img> -->
+   
+    <button onclick="topFunction()" id="myBtn">⟰</button>
+    <script>
+        /*kaynak belirt*/
+        window.onscroll = function() {myFunction()};   
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("yuklemeBar").style.width = scrolled + "%";
+        }
+    </script>
+        <script>
+            var mybutton = document.getElementById("myBtn");
+        
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+            </script>
+            
+    <script>
+        $(document).ready(function(){
+      $('.bxslider').bxSlider({
+          captions: true
+    });
+    });
+        </script>
+   
+<header>
+    <div class="container">
+      <div class="logo"><a href="index.html" target="_blank"><img src="edlogo.png"></a></div>    
+        <ul>
+            <li><a href="index.html" target="_blank">Ana Sayfa</a></li>
+
+            <li><a href="#çalışmalarım">Çalışmalarım</a>
+                <ul>
+             
+                   <li><a href="hastaneotomasyonu.html" target="_blank">Hastane Otomasyonu</a></li>
+             
+                   <li><a href="edvideooynatici.html" target="_blank" >ED Video Oynatıcı</a></li> 
+             
+                   <li><a href="edradyooynatici.html" target="_blank" >ED Radyo Uygulaması</a></li>
+                   
+                   <li><a href="insankaynaklari.html" target="_blank">İnsan Kaynakları Programı</a></li> 
+                 </ul>
+             
+                 </li>
+          
+            <li><a href="hakkimda.html" target="_blank">Hakkımda</a></li>
+          
+            
+          
+            <li><a href="galeri.html" target="_blank">Galeri</a></li>
+          
+            <li><a href="iletisim.html" target="_blank">İletişim</a></li>
+          </ul> 
+        
+    </div>
+</header>
+
+<div class="bolumanasayfa"></div>
+<div class="resim">
+    <div class="text">   
+        <h1><span>EFECAN DEMİR</span></h1>
+        <h3 class="kisisel">Kişisel Web Sitesi</h3>
+    </div>
+</div>
+</div>
+<div class="container">
+    <div class="left"><br><br>
+        <div class="leftp">
+            <div id="slider">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class=" carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                        <li data-target="#myCarousel" data-slide-to="3"></li>
+                      </ol>
+    <!-- resim -->
+    <div class="carousel-inner slider">
+      <div class="item active">
+        <a href="edvideooynatici.html" target="_blank" ><img src="videoslider.png" alt=""></a>
+      </div>
+      <div class="item">
+        <a href="edradyooynatici.html" target="_blank" ><img src="radyoslider.png" alt=""></a>
+      </div>   
+      <div class="item">
+        <a href="insankaynaklari.html" target="_blank" ><img src="insanslider.png" alt=""></a>
+      </div>
+        <div class="item">
+        <a href="galeri.html" target="_blank" ><img src="galerislider.png" alt=""></a>
+      </div>
+    </div>
+
+    <!-- sağ-sol ok -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only"></span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only"></span>
+    </a>
+  </div>
+<!--
+                <div class="sliderleft"><i class="fas fa-angle-double-left fa-3x"></i></div>
+                <div class="sliderright"><i class="fas fa-angle-double-right fa-3x"></i></div>
+               <li> <a href="edradyooynatici.html" target="_blank"><img src="3.jpg" alt=""></li></a>
+               <li> <a href="edradyooynatici.html" target="_blank"><img src="2.jpg" alt=""></li></a>
+               <li> <a href="edradyooynatici.html" target="_blank"><img src="3.jpg" alt=""></li></a>
+               <li> <a href="edradyooynatici.html" target="_blank"><img src="3.jpg" alt=""></li></a>
+-->
+            </div>
+            <br><br>
+       
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="rightp">
+            <h2>Duyurular</h2>
+                <ul>
+                    <li>
+                    	<p>
+                        🔊 ED Video Oynatıcı tanıtım videosu sitemize eklenmiştir.    
+                      </p>
+                        <strong>ED Video Oynatıcı</strong> <a href="edvideooynatici.html" target="_blank">Duyuru Kaynağı</a>
+                    </li>
+                    <li>
+                    	<p >
+                        🔊 Proje görselleri sitemizde galeri bölümüne eklenmiştir.    
+                      </p>
+                        <strong>Galeri</strong> <a href="galeri.html" target="_blank">Duyuru Kaynağı</a>
+                    </li>
+                    <li>
+                    	<p >
+                        🔊 Projeler veya sorularınız hakkında iletişime geçmek için.    
+                      </p>
+                        <strong>İletişim</strong> <a href="iletisim.html" target="_blank">Duyuru Kaynağı</a>
+                    </li>
+                </ul>&nbsp;
+
+            <h2>Haberler</h2>
+            <ul>
+                <li>
+                    <p>
+                     <!-- BAŞLA: TRT Haber Sitene Ekle -->
+<div style="font: normal 11px Arial; width: 320px; border: solid 1px #BF7E04; background: #BF7E04; border-radius: 3px; box-shadow: 1px 1px 3px #BF7E04;">
+  <h2 style="padding: 8px; margin: 0; height: 65px; border: 0; border-bottom: solid 1px #BF7E04;">
+      <a href="https://www.trthaber.com/">
+          <img src="https://www.trthaber.com/static/images/siteneEkle/logo_k_v3.png" alt="TRT Haber Haberler" style="border: none 0;">
+      </a>
+  </h2>
+  <iframe frameborder="0" width="320" height="300" src="https://www.trthaber.com/sitene-ekle/mansetler-m/?haberSay=10&renk=a&baslik=1&resimler=1"></iframe> 
+  <div style="text-align: center;line-height: 23px;border-top: solid 1px #BF7E04; color: #ccc; margin-top: 5px;box-shadow: 0 -1px 3px #BF7E04;">
+      <a style="text-decoration: none;color: #ccc; font: normal 11px Arial;" href="https://www.trthaber.com/">En Son Haberler</a> &nbsp;|&nbsp; <a style="text-decoration: none;color: #ccc; font: normal 11px Arial;" href="https://www.trthaber.com/haber/gundem/">Gündem Haberleri</a>
+  </div>
+</div>
+<!-- BİTİŞ: TRT Haber Sitene Ekle -->
+
+                    </p>
+                    <strong>TRT Haber</strong> <a href="https://www.trthaber.com/haber/bilim-teknoloji/" target="_blank">Haber Kaynağı</a>
+                </li>
+                <li>
+                    <p>
+                      <div style='font: normal 11px Arial; width: 320px;  border: solid 1px #ccc; background: #fff; border-radius: 3px; box-shadow: 1px 1px 3px #ccc;'>
+                        <h2 style='padding: 8px; margin: 0; background-color:#BF7E04; height: 65px; border: 0; border-bottom: solid 1px #ccc;'><a href = 'https://www.aa.com.tr/tr/sirkethaberleri' style='float:left'>
+                        <img src = 'https://cdnassets.aa.com.tr/assets/sirkethaberleri/images/aa-logo-white.png' alt = 'Teknoloji Haberleri' style = 'border: none 0;'>
+                         </a><span style='color:#fff;margin-left:17px;float:left;font-family:Times New Roman;font-size:20px;margin-top:6px;'>Teknoloji Haberleri</span>
+                                       
+                       </h2><iframe frameborder='0' width='320' height='300' src='https://www.aa.com.tr/tr/sirkethaberleri/aase/sitenekle/?cat=163&count=5&design=Açık&img=1&title=1'></iframe>
+               </div>
+                    </p>
+                    <strong>Anadolu Ajansı</strong> <a href="https://www.aa.com.tr/tr/sirkethaberleri/bilisim" target="_blank">Haber Kaynağı</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+    <div class="clear"></div>
+    <footer>
+        <div class="container">
+            
+            <div class="column-33">
+                <span class="line"><h2 class="title">Sayfalar</h2></span> <br>
+                    <a class="info" href="index.html" target="_blank">Ana Sayfa</a> <br>
+                    <a class="info" href="" >Çalışmalarım</a> <br>
+                    <a class="info" href="hastaneotomasyonu.html" target="_blank" >🔸Hastane Otomasyonu</a> <br>
+                    <a class="info" href="edvideooynatici.html" target="_blank" >🔸ED Video Oynatıcı</a> <br>
+                    <a class="info" href="edradyooynatici.html" target="_blank" >🔸ED Radyo Uygulaması</a> <br>
+                    <a class="info" href="insankaynaklari.html" target="_blank" >🔸İnsan Kaynakları Programı</a> <br>
+                    <a class="info" href="hakkimda.html" target="_blank">Hakkımda</a> <br>
+                    <a class="info" href="galeri.html" target="_blank">Galeri</a> <br>
+                    <a class="info" href="iletisim.html" target="_blank">İletişim</a>
+            </div>
+            <div class="column-33">
+                <span class="line"><h2 class="title">Sosyal Medya</h2></span><br><br>
+                <a href="https://www.instagram.com/efecndmr/"><img src="Instagram.png"  height="50" width="50"/></a><br>
+                <a href="https://www.youtube.com/channel/UCBXXvxrK40ae5A8JckLh8_A"><img src="youtube.png"  height="60" width="60"/></a>
+                <a href="https://github.com/EfecanDemir"><img src="github.jpg"  height="60" width="60"/></a>
+           
+              </div>
+            <div class="column-33">
+                <span class="line"><h2 class="title">İletişim</h2></span><br>
+                <span class="info">
+                Efecan Demir<br>
+                0 542 797 15 45<br>
+                demir.efecan@hotmail.com<br>
+                Etimesgut/ANKARA<br><br><br>
+                Copyright © 2020 by Efecan Demir
+                </span>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </footer>
+</body>
+</html>
