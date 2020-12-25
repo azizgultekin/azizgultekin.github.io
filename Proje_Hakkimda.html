@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Hakkımda</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Proje2.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+</head>
+<body>
+    <img style="width: 9%; height: 10%;" src="yukari.png" onclick="topFunction()" id="myBtn" title="Yukarı Çık">
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+                }
+            }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+     <header>
+        <div id="Sosyal_Medya">
+             <div style="width: 50%; float: left; padding: 1%;">
+                 <font style="display: flex;"> <a style="margin-top: 3%; ">Aziz GÜLTEKİN |&nbsp;</a> <img  class="logo" src="logo2.png" alt="logo" onclick="location.href='index.html' "></font>
+             </div>
+             <div style="width: 50%; padding: 1%;" >
+                 <div style="float: right; padding: 1%;">
+                     <a href="https://tr-tr.facebook.com/" target="_blank" ><i style="color: white;" class="fab fa-facebook" ></i></a>
+                     <a  href="https://www.instagram.com/?hl=tr" target="_blank" ><i style="color: white;" class="fab fa-instagram" ></i></a>
+                     <a  href="https://twitter.com/home?lang=tr" target="_blank" ><i style="color: white;" class="fab fa-twitter" ></i></a>
+                     <a  href="https://www.youtube.com/?hl=tr&gl=TR" target="_blank" ><i style="color: white;" class="fab fa-youtube" ></i></a>
+                 </div>
+             </div>
+        </div>
+     </header>
+    <div id="container">
+        <header id="Cerceve">
+            <img id="Cerceve_resim" src="Kisisel_Foto3.jpg" alt="">
+        </header>
+        <section>
+            <nav>
+                <ul class="Menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i>Anasayfa</a></li>
+                    <li><a href="Proje_Hakkimda.html" target="_blank"><i class="fas fa-users"></i>Hakkımda</a></li>
+                    <li><a href="Proje_Calismalarim.html"><i class="fas fa-asterisk"></i>Çalışmalarım</a>
+                        <ul class="Acilir_Menu">
+                            <li><a href="Proje_HastaneOtomasyonu.html" target="_blank"><i class="fas fa-angle-right"></i>Hastane Otomasyonu</a></li>
+                            <li><a href="Proje_İK_YonetimSistemi.html" target="_blank"><i class="fas fa-angle-right"></i>İK Yönetim Sistemi</a></li>
+                            <li><a href="Proje_NotDefteri.html" target="_blank"><i class="fas fa-angle-right"></i>Not Defteri</a></li>
+                            <li><a href="Proje_PersonelOtomasyonu.html" target="_blank"><i class="fas fa-angle-right"></i>Personel Otomasyonu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Proje_Galeri.html"><i class="fas fa-images"></i>Galeri</a></li>
+                    <li><a href="Proje_İletisim.html"><i class="fas fa-address-book"></i>İletişim</a></li>
+                </ul>
+            </nav>
+                <main>
+                    <script>
+                        function makeEditable(){
+                            document.getElementById("div").style.border="1px solid #000";
+                            document.getElementById("div").style.padding="2%";
+                            document.getElementById("div").contentEditable=true;
+                        }
+                        
+                       function indir() {
+                            var divContents = document.getElementById("div").innerHTML;
+                            var printWindow = window.open('', '', 'height=400,width=800');
+                            printWindow.document.write(divContents);
+                            printWindow.document.close();
+                            printWindow.print();
+                        };
+                    </script>
+                    
+                    <h1>Hakkımda</h1>
+                    <div id="div"  >
+                        <a href="AzizGultekin.png" target="_blank"><img class="Kisisel_Resim" src="AzizGultekin.png" ></a>
+                        <h3 style="margin-left: 1%;">Kişisel Bilgiler</h3>
+                        <p style="margin-left: 1%;">
+                            <p> Ad Soyad: Aziz Gültekin</p>
+                            <p>Cinsiyet: Erkek </p> 
+                            <p> Medeni Durumu: Bekar </p> 
+                            <p> Kan Grubu: A Rh(+) </p> 
+                            <p>Adres: Çamlık Mahallesi , Meşe Sokak Siltaş Safir Park Evleri C Blok Daire 3 Pendik/İstanbul </p>
+                            <p>Cep Telefonu: 05399171556 </p>  
+                            <p>Doğum Tarihi: 28.12.1999 </p>
+                            <p>Doğum Yeri: Kadıköy / İstanbul</p> 
+                            <p>E-posta: azizg55@hotmail.com</p> 
+                        </p>
+                        <br>
+                        <h3 >Eğitim Bilgileri</h3>
+                        <p style="margin-left: 2%;">
+                            <p>Üniversite: Kocaeli Üniversitesi , Teknoloji Fakültesi, Türkiye(2018)-Devam Ediyor </p>
+                            <p>Lise: Özel Pendik Biltek Anadolu Lisesi , Türkiye (2017-2018) </p> 
+                            <p>Lise: Pendik Anadolu Lisesi , Türkiye (2014-2017)</p> 
+                            <p>İlkokul ve Ortaokul: Kurtköy 75. Yıl Mesut Yılmaz İlköğretim ve Ortaokulu, Pendik, Türkiye(2006-2014)</p> 
+                        </p>
+                        <br>
+                        <h3 >Becerileri</h3>
+                        <p style="margin-left: 2%;" >
+                            <p>C#: İleri Düzey</p>  
+                            <p>Excel: Orta Düzey</p>
+                            <p>HTML/CSS: Orta Düzey </p> 
+                            <p>Word: İleri Düzey </p> 
+                            <p>Python: Orta Düzey </p> 
+                            <p>Java: Başlangıç Düzeyi </p>
+                            <p>MSSQL: Orta Düzey </p> 
+                            <p>MYSQL: Orta Düzey </p>
+                            <p>Javascript: Başlangıç Düzeyi</p>
+                        </p>
+                        <br>
+                        <h3 >Yabancı Dilleri</h3>
+                        <p style="margin-left: 1%;" >
+                            <p>İngilizce: B1</p>
+                            <p>Almanca: A1</p> 
+                        </p>
+                        <br>
+                        <h3 >Hobileri</h3>
+                        <p style="margin-left: 2%;" >
+                            <p>Film İzlemek </p>
+                            <p>Futbol Oynamak </p>
+                            <p>Kitap Okumak <br></p>
+                            <p>Bilgisayar Oyunu Oynamak <br></p>
+                            <p>Basketbol Oynamak </p>
+                        </p> 
+                        <br>
+                        <br>
+                    </div>
+                    <div style="margin-left: 1%;">
+                        <button  onclick="makeEditable()" style="background-color: black; color: white; width: auto;  font-weight: bold; cursor: pointer;">Düzenle</button>
+                        <button  id="btnPrint" onclick="indir()" style="background-color: black; color: white; width: auto;  font-weight: bold; cursor: pointer;">İndir</button>
+                    </div>
+                    <br>
+                    <br>
+                </main>
+        </section>
+        <footer>
+            <div class="footer_container">
+                <div class="kutu" id="kt1">
+                   <b>Sayfalar</b>
+                   <ul>
+                      <li><a href="index.html">Anasayfa</a></li>
+                      <li><a href="Proje_Hakkimda.html">Hakkımda</a></li>
+                      <li><a href="Proje_Calismalarim.html">Çalışmalarım</a></li>
+                      <li><a href="Proje_Galeri.html">Galeri</a></li>
+                      <li><a href="Proje_İletisim.html">İletişim</a></li>
+                   </ul>
+                </div>
+                <div class="kutu" id="kt2">
+                   <b>İletişim</b>
+                   <ul>
+                      <li>Aziz Gültekin</li>
+                      <li>Cep Telefonu: 0 539 917 15 56</li>
+                      <li>Mail: azizg55@hotmail.com</li>
+                      <li>Adres: Çamlık Mah. Meşe Sok. Siltaş Safirperk Evleri C/3 Pendik/İstanbul </li>
+                   </ul>
+                </div>
+                <div class="kutu" id="kt3">
+                   <b>Sosyal Medya</b>
+                   <ul>
+                        <li><a style="background-color: black;" href="https://tr-tr.facebook.com/" target="_blank" ><i style="color: white;" class="fab fa-facebook" ></i></a></li>
+                        <li><a style="background-color: black;" href="https://www.instagram.com/?hl=tr" target="_blank" ><i style="color: white;" class="fab fa-instagram" ></i></a></li>
+                        <li><a style="background-color: black;" href="https://twitter.com/home?lang=tr" target="_blank" ><i style="color: white;" class="fab fa-twitter" ></i></a></li>
+                        <li><a style="background-color: black;" href="https://www.youtube.com/?hl=tr&gl=TR" target="_blank" ><i style="color: white;" class="fab fa-youtube" ></i></a></li>
+                   </ul>
+                </div>
+             </div> 
+             <div style="clear: both;"></div>
+             <div class="copyright">
+                ©2020 Tüm hakları saklıdır. | <a style="color: white;" href="http://bilisim.kocaeli.edu.tr/" target="_blank">http://bilisim.kocaeli.edu.tr/</a> 
+            </div> 
+        </footer>
+    </div>
+</body>
+</html>

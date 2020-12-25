@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Galeri</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Proje2.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src='main.js'></script>
+   
+</head>
+<body>
+    <img style="width: 9%; height: 10%;" src="yukari.png" onclick="topFunction()" id="myBtn" title="Yukarı Çık">
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+                }
+            }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+ <header>
+    <div id="Sosyal_Medya">
+         <div style="width: 50%; float: left; padding: 1%;">
+             <font style="display: flex;"> <a style="margin-top: 3%; ">Aziz GÜLTEKİN |&nbsp;</a> <img  class="logo" src="logo2.png" alt="logo" onclick="location.href='index.html' "></font>
+         </div>
+         <div style="width: 50%; padding: 1%;" >
+             <div style="float: right; padding: 1%;">
+                 <a href="https://tr-tr.facebook.com/" target="_blank" ><i style="color: white;" class="fab fa-facebook" ></i></a>
+                 <a  href="https://www.instagram.com/?hl=tr" target="_blank" ><i style="color: white;" class="fab fa-instagram" ></i></a>
+                 <a  href="https://twitter.com/home?lang=tr" target="_blank" ><i style="color: white;" class="fab fa-twitter" ></i></a>
+                 <a  href="https://www.youtube.com/?hl=tr&gl=TR" target="_blank" ><i style="color: white;" class="fab fa-youtube" ></i></a>
+             </div>
+         </div>
+    </div>
+ </header>
+    <div id="container">
+        <header id="Cerceve">
+            <img id="Cerceve_resim" src="Kisisel_Foto3.jpg" alt="">
+        </header>
+        <section>
+            <nav>
+                <ul class="Menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i>Anasayfa</a></li>
+                    <li><a href="Proje_Hakkimda.html" target="_blank"><i class="fas fa-users"></i>Hakkımda</a></li>
+                    <li><a href="Proje_Calismalarim.html"><i class="fas fa-asterisk"></i>Çalışmalarım</a>
+                        <ul class="Acilir_Menu">
+                            <li><a href="Proje_HastaneOtomasyonu.html" target="_blank"><i class="fas fa-angle-right"></i>Hastane Otomasyonu</a></li>
+                            <li><a href="Proje_İK_YonetimSistemi.html" target="_blank"><i class="fas fa-angle-right"></i>İK Yönetim Sistemi</a></li>
+                            <li><a href="Proje_NotDefteri.html" target="_blank"><i class="fas fa-angle-right"></i>Not Defteri</a></li>
+                            <li><a href="Proje_PersonelOtomasyonu.html" target="_blank"><i class="fas fa-angle-right"></i>Personel Otomasyonu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Proje_Galeri.html"><i class="fas fa-images"></i>Galeri</a></li>
+                    <li><a href="Proje_İletisim.html"><i class="fas fa-address-book"></i>İletişim</a></li>
+                </ul>
+            </nav>
+                <main>
+                    <h1>Galeri</h1>
+                    <br>
+                    <a class="Link" href="r1.jpg" target="blank">
+                        <img class="Galeri_Resim" src="r1.jpg" alt="">
+                    </a>
+                    <a class="Link" href="r2.jpg" target="blank">
+                        <img class="Galeri_Resim" src="r2.jpg" alt="">
+                    </a>
+                    <a class="Link" href="r3.jpg" target="blank">
+                        <img class="Galeri_Resim" src="r3.jpg" alt="">
+                    </a>
+                    <a class="Link" href="r4.jpg" target="blank">
+                        <img class="Galeri_Resim" src="r4.jpg" alt="">
+                    </a>
+                    <a class="Link" href="r5.jpg" target="blank">
+                        <img class="Galeri_Resim" src="r5.jpg" alt="">
+                    </a>
+                    <a class="Link" href="r6.png" target="blank">
+                        <img class="Galeri_Resim" src="r6.png" alt="">
+                    </a>
+                    <a class="Link" href="r7.png" target="blank">
+                        <img class="Galeri_Resim" src="r7.png" alt="">
+                    </a>
+                    <a class="Link" href="r8.png" target="blank">
+                        <img class="Galeri_Resim" src="r8.png" alt="">
+                    </a>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                </main>
+        </section>
+        <footer>
+            <div class="footer_container">
+                <div class="kutu" id="kt1">
+                   <b>Sayfalar</b>
+                   <ul>
+                      <li><a href="index.html">Anasayfa</a></li>
+                      <li><a href="Proje_Hakkimda.html">Hakkımda</a></li>
+                      <li><a href="Proje_Calismalarim.html">Çalışmalarım</a></li>
+                      <li><a href="Proje_Galeri.html">Galeri</a></li>
+                      <li><a href="Proje_İletisim.html">İletişim</a></li>
+                   </ul>
+                </div>
+                <div class="kutu" id="kt2">
+                   <b>İletişim</b>
+                   <ul>
+                      <li>Aziz Gültekin</li>
+                      <li>Cep Telefonu: 0 539 917 15 56</li>
+                      <li>Mail: azizg55@hotmail.com</li>
+                      <li>Adres: Çamlık Mah. Meşe Sok. Siltaş Safirperk Evleri C/3 Pendik/İstanbul </li>
+                   </ul>
+                </div>
+                <div class="kutu" id="kt3">
+                   <b>Sosyal Medya</b>
+                   <ul>
+                        <li><a style="background-color: black;" href="https://tr-tr.facebook.com/" target="_blank" ><i style="color: white;" class="fab fa-facebook" ></i></a></li>
+                        <li><a style="background-color: black;" href="https://www.instagram.com/?hl=tr" target="_blank" ><i style="color: white;" class="fab fa-instagram" ></i></a></li>
+                        <li><a style="background-color: black;" href="https://twitter.com/home?lang=tr" target="_blank" ><i style="color: white;" class="fab fa-twitter" ></i></a></li>
+                        <li><a style="background-color: black;" href="https://www.youtube.com/?hl=tr&gl=TR" target="_blank" ><i style="color: white;" class="fab fa-youtube" ></i></a></li>
+                   </ul>
+                </div>
+             </div> 
+             <div style="clear: both;"></div>
+             <div class="copyright">
+                ©2020 Tüm hakları saklıdır. | <a style="color: white;" href="http://bilisim.kocaeli.edu.tr/" target="_blank">http://bilisim.kocaeli.edu.tr/</a> 
+            </div> 
+        </footer>
+    </div>
+</body>
+</html>

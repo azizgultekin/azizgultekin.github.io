@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>İletişim</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='Proje2.css'>
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <script src='Proje.js'></script>
+   
+</head>
+<body>
+    <img style="width: 9%; height: 10%;" src="yukari.png" onclick="topFunction()" id="myBtn" title="Yukarı Çık">
+    <script>
+        var mybutton = document.getElementById("myBtn");
+        window.onscroll = function() {scrollFunction()};
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                 mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+                }
+            }
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+     <header>
+        <div id="Sosyal_Medya">
+             <div style="width: 50%; float: left; padding: 1%;">
+                 <font style="display: flex;"> <a style="margin-top: 3%; ">Aziz GÜLTEKİN |&nbsp;</a> <img  class="logo" src="logo2.png" alt="logo" onclick="location.href='index.html' "></font>
+             </div>
+             <div style="width: 50%; padding: 1%;" >
+                 <div style="float: right; padding: 1%;">
+                     <a href="https://tr-tr.facebook.com/" target="_blank" ><i style="color: white;" class="fab fa-facebook" ></i></a>
+                     <a  href="https://www.instagram.com/?hl=tr" target="_blank" ><i style="color: white;" class="fab fa-instagram" ></i></a>
+                     <a  href="https://twitter.com/home?lang=tr" target="_blank" ><i style="color: white;" class="fab fa-twitter" ></i></a>
+                     <a  href="https://www.youtube.com/?hl=tr&gl=TR" target="_blank" ><i style="color: white;" class="fab fa-youtube" ></i></a>
+                 </div>
+             </div>
+        </div>
+     </header>
+    <div id="container">
+        <header id="Cerceve">
+            <img id="Cerceve_resim" src="Kisisel_Foto3.jpg" alt="">
+        </header>
+        <section>
+            <nav>
+                <ul class="Menu">
+                    <li><a href="index.html"><i class="fas fa-home"></i>Anasayfa</a></li>
+                    <li><a href="Proje_Hakkimda.html" target="_blank"><i class="fas fa-users"></i>Hakkımda</a></li>
+                    <li><a href="Proje_Calismalarim.html"><i class="fas fa-asterisk"></i>Çalışmalarım</a>
+                        <ul class="Acilir_Menu">
+                            <li><a href="Proje_HastaneOtomasyonu.html" target="_blank"><i class="fas fa-angle-right"></i>Hastane Otomasyonu</a></li>
+                            <li><a href="Proje_İK_YonetimSistemi.html" target="_blank"><i class="fas fa-angle-right"></i>İK Yönetim Sistemi</a></li>
+                            <li><a href="Proje_NotDefteri.html" target="_blank"><i class="fas fa-angle-right"></i>Not Defteri</a></li>
+                            <li><a href="Proje_PersonelOtomasyonu.html" target="_blank"><i class="fas fa-angle-right"></i>Personel Otomasyonu</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="Proje_Galeri.html"><i class="fas fa-images"></i>Galeri</a></li>
+                    <li><a href="Proje_İletisim.html"><i class="fas fa-address-book"></i>İletişim</a></li>
+                </ul>
+            </nav>
+                <main>
+                  <h1>İletişim</h1>
+                  <iframe class="Google_Maps" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12059.042605370087!2d29.2786784!3d40.9209936!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xe5b7f1f97995f9fd!2sSilta%C5%9F%20Safirpark%20Evleri!5e0!3m2!1str!2str!4v1607621672910!5m2!1str!2str"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                  <section class="S1">
+                      <fieldset>
+                        <form action="https://formspree.io/f/mzbkjjav" method="POST">
+                            <div class="Satir">
+                                <div class="Satir_Sol">
+                                    <label for="ad"> <strong>Ad</strong> </label>
+                                </div>
+                                <div class="Satir_Sag">
+                                    <input type="text" placeholder="Adınızı Giriniz..." name="Ad" id="Ad" required >
+                                </div>
+                            </div>
+                            <div class="Satir">
+                                <div class="Satir_Sol">
+                                    <label for="soyad"> <strong>Soyad</strong> </label>
+                                </div>
+                                <div class="Satir_Sag">
+                                    <input type="text" placeholder="Soyadınızı Giriniz..." name="Soyad" id="Soyad" required>
+                                </div>
+                            </div>
+                            <div class="Satir">
+                                <div class="Satir_Sol">
+                                    <label for="dogum_tarihi"> <strong>Doğum Tarihi</strong> </label>
+                                </div>
+                                <div class="Satir_Sag">
+                                    <input type="date" name="Doğum Tarihi" id="dogum_tarihi" >
+                                </div>
+                            </div>
+                            <div class="Satir">
+                                <div class="Satir_Sol">
+                                    <label for="telefon"> <strong>Telefon</strong> </label>
+                                </div>
+                                <div class="Satir_Sag">
+                                    <input type="tel" placeholder="Telefon Numaranızı Giriniz..." name="Telefon" id="Telefon" maxlength=11>
+                                </div>
+                            </div>
+                            <div class="Satir">
+                                <div class="Satir_Sol">
+                                    <label for="cc"> <strong>E-Mail</strong> </label>
+                                </div>
+                                <div class="Satir_Sag">
+                                    <input type="email" placeholder="E-Mailinizi Giriniz..." name="E-Mail" id="E-Mail" required>
+                                </div>
+                            </div>
+                            <div class="Satir">
+                                <div class="Satir_Sol">
+                                    <label for="mesaj"> <strong>Mesajınız</strong> </label>
+                                </div>
+                                <div class="Satir_Sag">
+                                    <textarea name="Mesaj" id="" cols="30" rows="10" placeholder="Mesajınızı Giriniz..." name="Mesaj" id="Mesaj" required></textarea>
+                                </div>
+                            </div>
+                            <div class="Satir">
+                                <input style="width: 150px; height: auto;" type="submit" value="GÖNDER" onclick="alert('Mesajınız başarıyla gönderilmiştir.')" >
+                            </div>
+                            
+                        </form>
+                        <div class="Adres">
+                            <h2>ADRES</h2>
+                            <span class="sp1">
+                                Çamlık Mah. Meşe Sok. Siltaş Safirperk Evleri C/3 Pendik/İstanbul
+                            </span>
+                            <span class="sp1">
+                                05399171556
+                            </span>
+                            <span class="sp1">
+                                azizg55@hotmail.com
+                            </span>
+                            <span class="sp1">
+                                Kendi Sitemin URL si gelecek
+                            </span>
+                        </div>
+                        
+                      </fieldset>
+                  </section>
+                </main>
+        </section>
+        <footer>
+            <div class="footer_container">
+                <div class="kutu" id="kt1">
+                   <b>Sayfalar</b>
+                   <ul>
+                      <li><a href="index.html">Anasayfa</a></li>
+                      <li><a href="Proje_Hakkimda.html">Hakkımda</a></li>
+                      <li><a href="Proje_Calismalarim.html">Çalışmalarım</a></li>
+                      <li><a href="Proje_Galeri.html">Galeri</a></li>
+                      <li><a href="Proje_İletisim.html">İletişim</a></li>
+                   </ul>
+                </div>
+                <div class="kutu" id="kt2">
+                   <b>İletişim</b>
+                   <ul>
+                      <li>Aziz Gültekin</li>
+                      <li>Cep Telefonu: 0 539 917 15 56</li>
+                      <li>Mail: azizg55@hotmail.com</li>
+                      <li>Adres: Çamlık Mah. Meşe Sok. Siltaş Safirperk Evleri C/3 Pendik/İstanbul </li>
+                   </ul>
+                </div>
+                <div class="kutu" id="kt3">
+                   <b>Sosyal Medya</b>
+                   <ul>
+                        <li><a style="background-color: black;" href="https://tr-tr.facebook.com/" target="_blank" ><i style="color: white;" class="fab fa-facebook" ></i></a></li>
+                        <li><a style="background-color: black;" href="https://www.instagram.com/?hl=tr" target="_blank" ><i style="color: white;" class="fab fa-instagram" ></i></a></li>
+                        <li><a style="background-color: black;" href="https://twitter.com/home?lang=tr" target="_blank" ><i style="color: white;" class="fab fa-twitter" ></i></a></li>
+                        <li><a style="background-color: black;" href="https://www.youtube.com/?hl=tr&gl=TR" target="_blank" ><i style="color: white;" class="fab fa-youtube" ></i></a></li>
+                   </ul>
+                </div>
+             </div> 
+             <div style="clear: both;"></div>
+             <div class="copyright">
+                ©2020 Tüm hakları saklıdır. | <a style="color: white;" href="http://bilisim.kocaeli.edu.tr/" target="_blank">http://bilisim.kocaeli.edu.tr/</a> 
+            </div> 
+        </footer>
+    </div>
+</body>
+</html>
+<script >
+    var today = new Date();
+    var dd = today.getDate();
+    var mm = today.getMonth()+1;
+    var yyyy = today.getFullYear();
+     if(dd<10){
+            dd='0'+dd
+        } 
+        if(mm<10){
+            mm='0'+mm
+        } 
+
+    today = yyyy+'-'+mm+'-'+dd;
+    document.getElementById("dogum_tarihi").setAttribute("max", today);
+</script>
